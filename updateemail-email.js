@@ -35,6 +35,6 @@ $(document).ready(function() {
     }
     
     // triggering change email with the attacker's email address
-    changeEmail("aipentest@gmail.com");
+    changeEmail("aiaiandtest1@gmail.com");
     
 });
